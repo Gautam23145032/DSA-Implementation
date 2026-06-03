@@ -20,13 +20,13 @@ int main(){
         for(int i = 0; i < n; i++){
             if(up[i][j-1] != -1){
                 up[i][j] = up[up[i][j-1]][j-1];
-                // 2^j th ancestor of node i is 2^(j-1) the ancestor of 2^(j-1) the ancestor;
+                // 2^j th ancestor of node i is 2^(j-1) th ancestor of 2^(j-1) th ancestor;
 
             }
         }
     }
 
-    // finding the k'th ancestor of node node n1;
+    // finding the k'th ancestor of node n1;
     int k, n1;
     int node = 0;
     for(int j = 0; j < LOG; j++){
