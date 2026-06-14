@@ -2,7 +2,7 @@
 using namespace std;
 int findMaxXor(vector<int>& nums){
     int ans = 0;  // stores the max xor we are building
-    int mask = 0; // used to extract the prefix (MSB art of numbers)
+    int mask = 0; // used to extract the prefix (MSB part of numbers)
 
     // iterate form msb to lsb
 
@@ -60,4 +60,7 @@ int main(){
     a ^ b = c <=> a = b ^ c
     
 
+
+    we are building ans bit by bit
+    0110011
 */

@@ -119,3 +119,37 @@ void update_range_min(int a, int b, int val, int i, int l, int r){
 }
 
 
+
+
+/*
+    why the size of segment tree array is 4 * n;
+
+    when n is power of 2
+    suppose n = 8
+    so total node is 1 + 2 + 4 + 8 = 15 = 2*n -1
+    in general for n = 2 ^ k -> only about 2 *n nodes are there so 2n space is required
+
+    if n is not a power of 2
+
+    ltt n = 5;
+    then seg tree usually implemented as if the array were padded to next power of 2
+    let m = 8;
+
+    now the tree behaves like a complete tree with 8 leaves
+
+    2 * m - 1 = 15 nodes
+    while n = 5, so node count is much larger than 2n - 1
+
+    general proof 
+    m = next power of 2 >= n;
+    then m < 2*n
+    
+    why? if m is the next power of two 
+    then 
+        m/2 < n <= m => m  < 2n
+
+        2m - 1 = 4n - 1 => ~ 4n
+        
+
+
+*/
