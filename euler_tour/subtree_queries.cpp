@@ -5,13 +5,13 @@ using namespace std;
 
 /*
 
-    Euler tour is a way of recording the order in which adfs enters and leaves nodes of a tree
+    Euler tour is a way of recording the order in which a dfs enters and leaves nodes of a tree
     -> useful for subtree queries, lca
 
     the core idea
     During DFS we can record 
     -> when we first enter a node
-    -> when we exit a nide after processing all its children
+    -> when we exit a node after processing all its children
 
     this sequence has length 2*n because each node appears twice(enter and exit)
 
@@ -27,7 +27,7 @@ using namespace std;
     # using euler tour to finding subtrees sum
 
     -> for a static tree, in one dfs we could calculate the sum but 
-    -> when there is update appear in tree, we need to do euler tree and apply segment tree to ans the queries
+    -> when there is update appear in tree, we need to do euler tour and apply segment tree to ans the queries
 
     key observation
 
