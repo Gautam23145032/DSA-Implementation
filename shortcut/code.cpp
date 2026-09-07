@@ -177,7 +177,25 @@ int main(){
     set<pair<int,int>, cmp> s;
 
 // Now the set orders pairs according to second
+    list<int> l;
 
+    l.push_back(x);       // add at end
+    l.push_front(x);      // add at beginning
 
+    l.pop_back();         // remove end
+    l.pop_front();        // remove beginning
+
+    l.front();            // first value
+    l.back();             // last value
+
+    l.begin();            // iterator to first
+    l.end();  
+    /*          // iterator after last
+    iterator it;
+    l.erase(it);          // remove node at iterator
+    l.insert(it, x);      // insert x before iterator
+
+    l.splice(it1, l, it2); // move it2 before it1
+    */
 
 }
